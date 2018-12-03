@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/bootstrap_v4.css">
+
+  <title>jQuery Engine</title>
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="breadcrumbs"></div>
+        <div id="sign"></div>
+        <!-- <div id="slider"></div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div id="card_1"></div>
+      </div>
+      <div class="col-md-3">
+        <div id="card_2"></div>
+      </div>
+      <div class="col-md-3">
+        <div id="card_3"></div>
+      </div>
+      <div class="col-md-3">
+        <div id="card_4"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="feature"></div>
+      </div>
+      <div class="col-md-12">
+        <div id="markup"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--jQuery needs to be the first script you import! -->
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  <!-- <script type="text/javascript" src="js/popper.js"></script> -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <!-- Custom partial - Aliases of the "Views" directory-->
+  <script type="text/javascript">
+    $('#navbar').load("views/navbar.html");
+    $('#sign').load("views/sign.html");
+    // $('#slider').load("views/slider.html");
+    $('#card_1').load("views/card_1.html");
+    $('#card_2').load("views/card_2.html");
+    $('#card_3').load("views/card_3.html");
+    $('#card_4').load("views/card_4.html");
+    $('#breadcrumbs').load("views/breadcrumbs.html");
+    $('#feature').load("views/feature.html");
+    $('#markup').load("views/markup.html");
+    // $('#form').load("views/form.html");
+  </script>
+
+</body>
+</html>
